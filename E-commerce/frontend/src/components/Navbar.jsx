@@ -4,9 +4,9 @@ import {
   Text,
   HStack,
   Button,
-  Link,
   useColorMode,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { PiPlusSquareFill } from "react-icons/pi";
 import { IoMoon } from "react-icons/io5";
 import { LuSun } from "react-icons/lu";
