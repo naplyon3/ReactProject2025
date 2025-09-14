@@ -22,13 +22,13 @@ export const ProductCard = ({ product }) => {
       bg={bg}
     >
       <Image
-        src={product.Image}
+        src={product.image}
         alt={product.name}
         h={48}
         w="full"
         objectFit="cover"
       />
-      {/* <Box p={4}>
+      <Box p={4}>
         <Heading as="h3" size="md" mb={2}>
           {product.name}
         </Heading>
@@ -40,7 +40,7 @@ export const ProductCard = ({ product }) => {
           <IconButton icon={<DeleteIcon />} colorScheme="red" />
         </HStack>
       </Box>
-    </Box> */}
+    </Box>
   );
 };
 
