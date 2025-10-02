@@ -5,6 +5,8 @@ import { useState } from "react";
 
 function App() {
   // we create  the use of state and pass the user input  ans set the user input to it
+  //this is lift the state this state organaly was create in the userInput component but because we need to use it on results component we lift the state and pass
+  //userInput to the UserInput component and also the handleCange function
 
   const [userInput, setUserInput] = useState({
     ///here we add default user input
@@ -13,6 +15,10 @@ function App() {
     expectedReturn: 6,
     duration: 10,
   });
+  ///note
+
+  const inputIsValid = userInput.duration >= 1;
+
   //we Create function  that handle the change and update the default value.inputIdentifire is the way we know which input we need to update
   function handleChange(inputIdentifier, newValue) {
     //when we update we need to keep the  crurrent value for the things we did not change that is way we have to make this kind of returne
@@ -28,7 +34,10 @@ function App() {
     <>
       <Header />;
       <UserInput userInput={userInput} onChange={handleChange} />
-      <Results input={userInput} />
+      {!inputIsValid && (
+        <p className="center">Please enter Duration Greater thatn Zero.</p>
+      )}
+      {inputIsValid && <Results input={userInput} />}
     </>
   );
 }
