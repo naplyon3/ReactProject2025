@@ -1,0 +1,22 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      <script>
+        const ourRquest = $.ajax({
+          url: "https://localhost:3000/ajax",
+          method: "POST",
+          dataType: "json",
+          data: { name: "John", age: 30 },
+        });
+        ourRquest.then((responses) => {
+          console.log(responses);
+        });
+      </script>
+    </h1>
+  </body>
+</html>

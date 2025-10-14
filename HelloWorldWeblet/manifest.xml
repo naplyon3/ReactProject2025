@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebApp xmlns="http://www.xerox.com/weblet">
+    <Name>HelloWorldWeblet</Name>
+    <DisplayName>Hello World</DisplayName>
+    <Description>Simple test Weblet</Description>
+    <Version>1.0</Version>
+    <StartPage>index.html</StartPage>
+</WebApp>
