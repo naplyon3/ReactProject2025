@@ -17,7 +17,7 @@ function driveActivePlayer(gamerTurns) {
   return currentPlayer;
 }
 
-/////
+///
 function App() {
   const [players, setPlayers] = useState({
     X: "player 1",
