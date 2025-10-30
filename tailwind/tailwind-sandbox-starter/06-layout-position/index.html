@@ -9,26 +9,100 @@
   </head>
   <body>
     <!-- Positioning -->
+    <div class="relative w-1/2 h-32 bg-yellow-200">
+      <p>Parent Element</p>
+      <div class="absolute bottom-1 right-4 bg-red-500">
+        <p>Absolute Child</p>
+      </div>
+    </div>
 
     <!-- Top left corner -->
 
+    <div class="relative w-1/2 mt-4 h-32 bg-red-200">
+      <p>Parent Element</p>
+      <div class="absolute bottom-1 left-0 bg-red-500">
+        <p>Absolute Child</p>
+      </div>
+    </div>
+
     <!-- Top right corner -->
+    <div class="relative w-1/2 mt-4 h-36 mt-2 bg-red-200">
+      <p>Parent Element</p>
+      <div class="absolute right-0 bottom-1 top-0 bg-red-500">
+        <p>Absolute Child</p>
+      </div>
+    </div>
 
     <!-- Bottom left corner -->
+    <div class="relative w-1/2 h-36 mt-2 bg-yellow-200">
+      <p>Parent Element</p>
+      <div class="absolute bottom-1 left-0 bg-red-500">
+        <p>Absolute Child</p>
+      </div>
+    </div>
 
     <!-- Bottom right corner -->
+    <div class="relative w-1/2 h-36 mt-2 bg-yellow-200">
+      <p>Parent Element</p>
+      <div class="absolute bottom-1 right-0 bg-red-500">
+        <p>Absolute Child</p>
+      </div>
+    </div>
 
     <!-- Span top edge -->
+    <div class="relative w-1/2 h-36 mt-2 bg-yellow-200">
+      <p>Parent Element</p>
+      <div class="absolute inset-x-0 top-0 bg-red-500">
+        <p>Absolute Child</p>
+      </div>
+    </div>
 
     <!-- Span left edge -->
+    <div class="relative w-1/2 h-36 mt-2 bg-yellow-200">
+      <p>Parent Element</p>
+      <div class="absolute inset-y-0 top-0 bg-red-500">
+        <p>Absolute Child</p>
+      </div>
+    </div>
 
     <!-- Span right edge -->
+    <div class="relative w-1/2 h-36 mt-2 bg-yellow-200">
+      <p>Parent Element</p>
+      <div class="absolute inset-y-0 right-0 bg-red-500">
+        <p>Absolute Child</p>
+      </div>
+    </div>
 
     <!-- Span bottom edge -->
+    <div class="relative w-1/2 h-36 mt-2 bg-yellow-200">
+      <p>Parent Element</p>
+      <div class="absolute inset-x-0 bottom-0 bg-red-500">
+        <p>Absolute Child</p>
+      </div>
+    </div>
 
     <!-- Display Classes -->
+    <div>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem <span class="inline font-bold">this is inline</span> Ipsum has been
+      the industry's
+      <span class="inline-block font-bold">This is span with inline-block</span
+      >, when an unknown printer took a galley of type and scrambled it to make
+      a type specimen book.
+      <span class="block font-bold">this is span with block class</span> It has
+      survived not only five centuries,
+      <span class="hidden font-bold">this is hiden</span> but also the leap into
+      electronic typesetting, remaining essentially unchanged. I
+    </div>
 
     <!-- Z-Index -->
+    <div class="relative h-36">
+      <div class="absolute left-10 w-24 h-24 bg-blue-300 z-40">1</div>
+      <div class="absolute left-20 w-24 h-24 bg-blue-400">2</div>
+      <div class="absolute w-24 left-40 h-24 bg-blue-500 z-10">3</div>
+      <div class="absolute w-24 left-60 h-24 bg-blue-600 z-40">4</div>
+      <div class="absolute w-24 h-24 left-80 bg-blue-700">5</div>
+    </div>
 
     <!-- Floats -->
   </body>
